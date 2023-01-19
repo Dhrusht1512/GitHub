@@ -3,8 +3,7 @@
     {% if request.user.user_type == '1' %}
     <!-- Brand Logo -->
     <a href="{% url 'admin_home' %}" class="brand-link">
-        <img src="{% static 'dist/img/cmsl.png' %} " alt="AdminLTE Logo"
-            class="brand-image img-circle elevation-3" >
+        <img src="{% static 'dist/img/cmsl.png' %} " alt="AdminLTE Logo" class="brand-image img-circle elevation-3">
         <span class="brand-text font-weight-light">Admin Panel</span>
     </a>
 
@@ -45,7 +44,7 @@
                         </p>
                     </a>
                 </li>
-                
+
 
 
                 <li class="nav-item has-treeview">
@@ -525,7 +524,7 @@
 
 
                                         <li class="nav-item">
-                                            <a href="{% url 'user_logout' %}"
+                                            <a href="#"
                                                 onclick="return confirm('Your session would be terminated.\n\nProceed?')"
                                                 class="nav-link">
                                                 <i class="nav-icon fas fa-power-off"></i>
