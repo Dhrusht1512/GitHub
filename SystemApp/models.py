@@ -7,7 +7,7 @@ from django.contrib.auth.models import AbstractUser
 class CustomUser(AbstractUser):
     USER = [
         (1, 'HOD'),
-        (2, 'Faculty'),
+        (2, 'FACULTY'),
         (3, 'STUDENT'),
     ]
 
