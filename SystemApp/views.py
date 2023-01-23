@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, HttpResponse
 from django.contrib.auth import authenticate, login, logout
 from SystemApp.EmailBackEnd import EmailBackEnd
 from django.contrib import messages
+from .models import CustomUser
 # Create your views here.
 
 
