@@ -2,4 +2,6 @@
 - Then, make database migrations: python manage.py makemigrations
 - python manage.py migrate
 - And finally, run the application: python manage.py runserver
-- For Admin Login Credentials, please create one using superuser
+- For Admin Login Credentials, 
+admin123@gmai.com
+123
