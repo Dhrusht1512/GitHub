@@ -25,7 +25,7 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <a href=""><b>VSITR</b>College Management System</a>
+            <a href=""><b>VSITR</b> portal</a>
 
         </div>
         <!-- /.login-logo -->
@@ -62,8 +62,7 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="g-recaptcha" data-sitekey="6LfswtgZAAAAAJ7bhwqZZtDpBsc75ekH6FWA4Fnt"></div>
-
+                    <div class="g-recaptcha" data-sitekey="6LfswtgZAAAAAJ7bhwqZZtDpBsc75ekH6FWA4Fnt"></div>
                     </div>
                     <div class="row">
                         <div class="col-8">
@@ -83,18 +82,14 @@
                         <!-- /.col -->
                     </div>
                 </form>
-
-
-                <p class="mb-1">
-                    <a href="{% url 'password_reset' %}">Forgot Password?</a>
-                </p>
-
             </div>
             <!-- /.login-card-body -->
         </div>
     </div>
     <!-- /.login-box -->
-
+    <p class="mb-1">
+        <a href="{% url 'password_reset' %}">Forgot Password?</a>
+    </p>
     <!-- jQuery -->
     <script src="{% static 'plugins/jquery/jquery.min.js' %}"></script>
     <!-- Bootstrap 4 -->
