@@ -3,9 +3,11 @@
     {% if request.user.user_type == '1' %}
     <!-- Brand Logo -->
     <a href="{% url 'admin_home' %}" class="brand-link">
-        <img src="{% static 'dist/img/cmsl.png' %} " alt="AdminLTE Logo"
+        <!--{% static 'dist/img/cmsl.png' %}
+        "https://i.ibb.co/j3nf7Hj/Web-capture-24-1-2023-125750-www-vsitr-ac-in-removebg-preview.png"-->
+        <img src="https://i.ibb.co/wJfhdBD/Web-capture-24-1-2023-125630-www-vsitr-ac-in-removebg-preview.png" alt="Admin Logo"
             class="brand-image img-circle elevation-3" >
-        <span class="brand-text font-weight-light">Admin Panel</span>
+        <span class="brand-text font-weight-light"><b>VSITR</b> &nbsp; Admin Panel</span>
     </a>
 
     <!-- Sidebar -->
@@ -13,10 +15,12 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                <img src="{{ request.user.profile_pic}}" class="img-circle elevation-2" alt="User Image">
+                <!--{{ request.user.profile_pic}}-->
+                <img src="https://i.ibb.co/zXF42T4/Passport-Size.jpg" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block">{{user}}</a>
+                <!--{{user}}-->
+                <a href="#" class="d-block">Admin User</a>
             </div>
         </div>
 
