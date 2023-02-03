@@ -23,6 +23,7 @@ class CustomUserForm(FormSettings):
         'password': forms.PasswordInput(),
     }
     profile_pic = forms.ImageField()
+    add_csv = forms.FileField()
 
     def __init__(self, *args, **kwargs):
         super(CustomUserForm, self).__init__(*args, **kwargs)
@@ -52,7 +53,7 @@ class CustomUserForm(FormSettings):
 
     class Meta:
         model = CustomUser
-        fields = ['first_name', 'last_name', 'email', 'gender',  'password','profile_pic', 'address' ]
+        fields = ['first_name', 'last_name', 'email', 'gender',  'password','profile_pic', 'address' ,'add_csv']
 
 
 class StudentForm(CustomUserForm):
