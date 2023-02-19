@@ -215,28 +215,6 @@
                     </a>
                 </li>
 
-                <li class="nav-item">
-                    {% url 'admin_notify_staff' as admin_notify_staff %}
-                    <a href="{{admin_notify_staff}}"
-                        class="nav-link {% if admin_notify_staff == request.path %} active {% endif %}">
-                        <i class="nav-icon fas fa-bullhorn"></i>
-                        <p>
-                            Notify Staff
-
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    {% url 'admin_notify_student' as admin_notify_student %}
-                    <a href="{{admin_notify_student}}"
-                        class="nav-link {% if admin_notify_student == request.path %} active {% endif %}">
-                        <i class="nav-icon fas fa-bullhorn"></i>
-                        <p>
-                            Notify Student
-
-                        </p>
-                    </a>
-                </li>
 
                 <li class="nav-item">
                     {% url 'admin_view_attendance' as admin_view_attendance %}
@@ -247,30 +225,6 @@
                         <i class="nav-icon fas fa-calendar-alt"></i>
                         <p>
                             View Attendance
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    {% url 'student_feedback_message' as student_feedback_message %}
-
-                    <a href="{{ student_feedback_message }}"
-                        class="nav-link  {% if student_feedback_message == request.path %} active {% endif %}">
-                        <i class="nav-icon fas fa-comment-alt"></i>
-                        <p>
-                            Student Feedback
-
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    {% url 'staff_feedback_message' as staff_feedback_message %}
-
-                    <a href="{{staff_feedback_message}}"
-                        class="nav-link   {% if staff_feedback_message == request.path %} active {% endif %}">
-                        <i class="nav-icon fas fa-comment"></i>
-                        <p>
-                            Staff Feedback
-
                         </p>
                     </a>
                 </li>
@@ -298,6 +252,53 @@
                         </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    {% url 'admin_notify_staff' as admin_notify_staff %}
+                    <a href="{{admin_notify_staff}}"
+                        class="nav-link {% if admin_notify_staff == request.path %} active {% endif %}">
+                        <i class="nav-icon fas fa-bullhorn"></i>
+                        <p>
+                            Notify Staff
+
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    {% url 'admin_notify_student' as admin_notify_student %}
+                    <a href="{{admin_notify_student}}"
+                        class="nav-link {% if admin_notify_student == request.path %} active {% endif %}">
+                        <i class="nav-icon fas fa-bullhorn"></i>
+                        <p>
+                            Notify Student
+
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    {% url 'student_feedback_message' as student_feedback_message %}
+
+                    <a href="{{ student_feedback_message }}"
+                        class="nav-link  {% if student_feedback_message == request.path %} active {% endif %}">
+                        <i class="nav-icon fas fa-comment-alt"></i>
+                        <p>
+                            Student Feedback
+
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    {% url 'staff_feedback_message' as staff_feedback_message %}
+
+                    <a href="{{staff_feedback_message}}"
+                        class="nav-link   {% if staff_feedback_message == request.path %} active {% endif %}">
+                        <i class="nav-icon fas fa-comment"></i>
+                        <p>
+                            Staff Feedback
+
+                        </p>
+                    </a>
+                </li>
+
 
                 {% elif request.user.user_type == '2' %}
                 <!-- Brand Logo -->
