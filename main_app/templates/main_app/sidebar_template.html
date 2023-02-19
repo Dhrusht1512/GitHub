@@ -5,8 +5,8 @@
     <a href="{% url 'admin_home' %}" class="brand-link">
         <!--{% static 'dist/img/cmsl.png' %}
         "https://i.ibb.co/j3nf7Hj/Web-capture-24-1-2023-125750-www-vsitr-ac-in-removebg-preview.png"-->
-        <img src="https://i.ibb.co/wJfhdBD/Web-capture-24-1-2023-125630-www-vsitr-ac-in-removebg-preview.png" alt="Admin Logo"
-            class="brand-image img-circle elevation-3" >
+        <img src="https://i.ibb.co/wJfhdBD/Web-capture-24-1-2023-125630-www-vsitr-ac-in-removebg-preview.png"
+            alt="Admin Logo" class="brand-image img-circle elevation-3">
         <span class="brand-text font-weight-light"><b>VSITR</b> &nbsp; Admin Panel</span>
     </a>
 
@@ -20,7 +20,7 @@
             </div>
             <div class="info">
                 <!--{{user}}-->
-                <a href="#" class="d-block">Admin User</a>
+                <a href="{% url 'profile' %}" class="d-block">Admin User</a>
             </div>
         </div>
 
@@ -49,7 +49,7 @@
                         </p>
                     </a>
                 </li>
-                
+
 
 
                 <li class="nav-item has-treeview">
@@ -302,8 +302,8 @@
                 {% elif request.user.user_type == '2' %}
                 <!-- Brand Logo -->
                 <a href="#" class="brand-link">
-                    <img src="https://i.ibb.co/wJfhdBD/Web-capture-24-1-2023-125630-www-vsitr-ac-in-removebg-preview.png" alt="AdminLTE Logo"
-                        class="brand-image img-circle elevation-3" style="opacity: .8">
+                    <img src="https://i.ibb.co/wJfhdBD/Web-capture-24-1-2023-125630-www-vsitr-ac-in-removebg-preview.png"
+                        alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
                     <span class="brand-text font-weight-light"><b>VSITR</b> Staff Panel</span>
                 </a>
 
@@ -432,8 +432,8 @@
                             <!-- Brand Logo -->
                             <a href="" class="brand-link">
 
-                                <img src="https://i.ibb.co/wJfhdBD/Web-capture-24-1-2023-125630-www-vsitr-ac-in-removebg-preview.png" alt="AdminLTE Logo"
-                                    class="brand-image img-circle elevation-3" style="opacity: .8">
+                                <img src="https://i.ibb.co/wJfhdBD/Web-capture-24-1-2023-125630-www-vsitr-ac-in-removebg-preview.png"
+                                    alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
                                 <span class="brand-text font-weight-light"><b>VSITR</b> Student Panel</span>
                             </a>
 
