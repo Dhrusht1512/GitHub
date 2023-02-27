@@ -13,7 +13,7 @@ from .models import Attendance, Session, Subject
 
 
 def profile(request):
-    return render(request, "main_app\profile.html")
+    return render(request, "main_app/profile.html")
 
 
 def login_page(request):
