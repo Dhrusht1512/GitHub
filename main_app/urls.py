@@ -21,13 +21,10 @@ from . import hod_views, staff_views, student_views, views
 
 urlpatterns = [
     path("", views.login_page, name='login_page'),
-    path("profile", views.profile, name='profile'),
     path("get_attendance", views.get_attendance, name='get_attendance'),
     path("firebase-messaging-sw.js", views.showFirebaseJS, name='showFirebaseJS'),
     path("doLogin/", views.doLogin, name='user_login'),
     path("logout_user/", views.logout_user, name='user_logout'),
-
-    # Admin pages
     path("admin/home/", hod_views.admin_home, name='admin_home'),
     path("staff/add", hod_views.add_staff, name='add_staff'),
     path("course/add", hod_views.add_course, name='add_course'),
@@ -67,12 +64,16 @@ urlpatterns = [
     path("staff/edit/<int:staff_id>", hod_views.edit_staff, name='edit_staff'),
     path("staff/delete/<int:staff_id>",
          hod_views.delete_staff, name='delete_staff'),
+
     path("course/delete/<int:course_id>",
          hod_views.delete_course, name='delete_course'),
+
     path("subject/delete/<int:subject_id>",
          hod_views.delete_subject, name='delete_subject'),
+
     path("session/delete/<int:session_id>",
          hod_views.delete_session, name='delete_session'),
+
     path("student/delete/<int:student_id>",
          hod_views.delete_student, name='delete_student'),
     path("student/edit/<int:student_id>",
@@ -128,4 +129,5 @@ urlpatterns = [
          name="student_view_notification"),
     path('student/view/result/', student_views.student_view_result,
          name='student_view_result'),
+
 ]
